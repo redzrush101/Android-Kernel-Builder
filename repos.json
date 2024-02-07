@@ -12,17 +12,26 @@
     "dtbPath":"boot/dts/qcom/sdmmagpie.dtb",
     "toolchains": [
       {
-        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
-        "branch": "lineage-19.1",
+        "repo": "https://github.com/ravindu644/Toolchains_for_Snapdragon",
+        "branch": "main",
         "name": "tools"
       }
     ],
     "params": {
       "ARCH": "arm64",
-      "CROSS_COMPILE": "aarch64-linux-android-",
-      "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
-      "CROSS_COMPILE_COMPAT":"",
-      "DTC_EXT":"dtc"
+      "CROSS_COMPILE": "aarch64-linux-gnu-",
+      "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
+      "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
+      "CLANG_TRIPLE": "aarch64-linux-gnu-",
+      "AR": "",
+      "CC": "clang",
+      "HOSTCXX":"",
+      "NM":"" ,
+      "OBJCOPY":"",
+      "OBJDUMP":"",
+      "STRIP":"",
+      "LD":"",
+      "DTC_EXT":""
     }
   }
 ]
