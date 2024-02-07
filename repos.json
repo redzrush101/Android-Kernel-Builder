@@ -12,7 +12,7 @@
     "dtbPath":"boot/dts/qcom/sdmmagpie.dtb",
     "toolchains": [
       {
-        "repo": "https://github.com/SlackerState/kernel_bulid",
+        "repo": "https://github.com/ravindu644/Toolchains_by_Google",
         "branch": "main",
         "name": "tools"
       }
