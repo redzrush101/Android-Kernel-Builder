@@ -2,17 +2,17 @@
   {
     "kernelSource": {
       "name": "MIUI",
-      "repo": "https://github.com/SlackerState/android_kernel_xiaomi_sm6150",
-      "branch": "phoenix-r-oss",
-      "device": "phoenix_ztc1997"
+      "repo": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/",
+      "branch": "sweet-r-oss",
+      "device": "sweet"
     },
     "isConfiginvendor":true,
-    "withKernelSU": true,
+    "withKernelSU": false,
     "useCustomtool":true,
     "dtbPath":"boot/dts/qcom/sdmmagpie.dtb",
     "toolchains": [
       {
-        "repo": "https://github.com/SlackerState/kernel_bulid",
+        "repo": "https://github.com/redzrush101/kernel_bulid",
         "branch": "main",
         "name": "tools"
       }
@@ -33,46 +33,6 @@
       "STRIP":"llvm-strip",
       "LD":"ld.lld",
       "DTC_EXT":"dtc"
-    }
-  },
-  {
-    "kernelSource": {
-      "name": "redcliff",
-      "repo": "https://github.com/SlackerState/android_kernel_xiaomi_sm6150",
-      "branch": "redcliff",
-      "device": "phoenix"
-    },
-    "isConfiginvendor":false,
-    "withKernelSU": true,
-    "useCustomtool":false,
-    "dtbPath":"boot/dts/qcom/sdmmagpie.dtb",
-    "toolchains": [
-      {
-        "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
-        "branch": "master",
-        "name": "gas"
-      },
-      {
-        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
-        "branch": "11",
-        "name": "clang"
-      }
-    ],
-    "params": {
-      "ARCH": "arm64",
-      "CROSS_COMPILE": "aarch64-linux-gnu-",
-      "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
-      "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
-      "CLANG_TRIPLE": "aarch64-linux-gnu-",
-      "AR": "",
-      "CC": "clang",
-      "HOSTCXX":"",
-      "NM":"" ,
-      "OBJCOPY":"",
-      "OBJDUMP":"",
-      "STRIP":"",
-      "LD":"",
-      "DTC_EXT":""
     }
   }
 ]
