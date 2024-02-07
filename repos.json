@@ -4,7 +4,7 @@
       "name": "MIUI",
       "repo": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/",
       "branch": "sweet-r-oss",
-      "device": "sweet_user_defconfig"
+      "device": "sweet_user"
     },
     "isConfiginvendor":true,
     "withKernelSU": false,
