@@ -12,8 +12,8 @@
     "dtbPath":"boot/dts/qcom/sdmmagpie.dtb",
     "toolchains": [
       {
-        "repo": "https://github.com/ravindu644/Toolchains_by_Google",
-        "branch": "main",
+        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
+        "branch": "lineage-19.1",
         "name": "tools"
       }
     ],
@@ -22,16 +22,6 @@
       "CROSS_COMPILE": "aarch64-linux-android-",
       "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
       "CROSS_COMPILE_COMPAT":"",
-      "CLANG_TRIPLE": "aarch64-linux-gnu-",
-      "AR": "llvm-ar",
-      "CC": "clang",
-      "HOSTCC":"gcc",
-      "HOSTCXX":"clang++",
-      "NM":"llvm-nm" ,
-      "OBJCOPY":"llvm-objcopy",
-      "OBJDUMP":"llvm-objdump",
-      "STRIP":"llvm-strip",
-      "LD":"ld.lld",
       "DTC_EXT":"dtc"
     }
   }
