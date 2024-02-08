@@ -1,20 +1,23 @@
 [
   {
     "kernelSource": {
-      "name": "MIUI",
-      "repo": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/",
-      "branch": "sweet-r-oss",
-      "device": "sweet_user"
+      "name": "Samsung_A70",
+      "repo": "https://github.com/rtd1250/android_kernel_samsung_sm6150",
+      "branch": "lineage-21",
+      "device": ""
+      "defconfig": "a70q_defconfig"
     },
-    "isConfiginvendor":true,
     "withKernelSU": false,
-    "useCustomtool":true,
-    "dtbPath":"boot/dts/qcom/sdmmagpie.dtb",
     "toolchains": [
       {
-        "repo": "https://github.com/ravindu644/Toolchains_for_Snapdragon",
-        "branch": "main",
-        "name": "tools"
+        "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
+        "branch": "master",
+        "name": "gas"
+      },
+      {
+        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
+        "branch": "14",
+        "name": "clang"
       }
     ],
     "params": {
@@ -24,14 +27,7 @@
       "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
       "CLANG_TRIPLE": "aarch64-linux-gnu-",
       "AR": "",
-      "CC": "clang",
-      "HOSTCXX":"",
-      "NM":"" ,
-      "OBJCOPY":"",
-      "OBJDUMP":"",
-      "STRIP":"",
-      "LD":"",
-      "DTC_EXT":""
+      "CC": "clang"
     }
-  }
+  },
 ]
